@@ -1,3 +1,5 @@
+# To read the jenkins credientials from the jenkins Script Console.
+
 def creds = com.cloudbees.plugins.credentials.CredentialsProvider.lookupCredentials(com.cloudbees.plugins.credentials.Credentials.class)
 for (c in creds) {
   println(c.id) if (c.properties.username) {
